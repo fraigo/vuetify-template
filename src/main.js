@@ -17,6 +17,8 @@ import {
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/app.styl'
 
+import appTheme from './theme.json'
+
 Vue.use(Vuetify, {
   components: {
     VApp,
@@ -29,15 +31,7 @@ Vue.use(Vuetify, {
     VToolbar,
     transitions
   },
-  theme: {
-    primary: '#ee44aa',
-    secondary: '#424242',
-    accent: '#82B1FF',
-    error: '#FF5252',
-    info: '#2196F3',
-    success: '#4CAF50',
-    warning: '#FFC107'
-  }
+  theme: appTheme
 })
 
 Vue.config.productionTip = false
