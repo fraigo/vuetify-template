@@ -1,38 +1,53 @@
-# vuetify-template
+# vue-app-template
 
-> A Vuetify template for starting a PWA application using Vue, Vue-router and Vuetify
+## Html Preview
 
-## Build Setup
+https://fraigo.github.io/vuetify-template/
 
-``` bash
-# install dependencies
+
+## Project setup
+```
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-## Preview
+## Setup a new project
 
-Preview at https://fraigo.github.io/vuetify-template/www/
-
-
-
+* `vue create vue-template`
+    * Use vue-2 template
+* `cd vue-template`
+* `vue add vuetify`
+    * Use Preset: Vuetify 2 - Vue CLI (recommended)
+* `vue add router`
+    * Use history mode for router? (Requires proper server setup for index fallback in production) No
+* `vue add vuex`
+* `npm install -D sass-loader node-sass`
+* `vue add pwa`
